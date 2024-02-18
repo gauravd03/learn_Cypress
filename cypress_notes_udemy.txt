@@ -1,0 +1,91 @@
+
+What is Cypress?
+
+· Cypress is a next generation front end Automation testing tool built for the modern web applications
+
+*****************************************************************
+How Cypress is Unique from other Automation tools?
+
+Cypress automatically waits for commands and assertions before moving on. No more async hell.
+
+Ability to test Edge Testcases by Mocking the server response
+
+Cypress takes snapshots as your tests run. We can hover over each commands in the Command Log to see exactly what happened at each step.
+
+Because of its Architectural design, Cypress delivers fast, consistent and reliable test execution compared to other Automation tools
+
+View videos of your entire tests execution when run from the Cypress Dashboard.
+
+*************************************************************
+
+Cypress Architecture
+
+Most testing tools (like Selenium) operate by running outside of the browser and executing remote commands across the network. But Cypress engine directly operates inside the browser. In other words, It is the browser that is executing your test code
+
+This enables Cypress to listen and modify the browser behavior at run time by manipulating DOM and altering Network requests and responses on the fly
+
+Cypress open doors to New Kind of testing with Having ultimate control over your application (front and back)
+
+**********************************************
+
+Cypress Browser Support:
+
+
+Chrome
+Electron
+Firefox & IE
+
+**************************************************
+Cypress Components:
+
+Test Runner
+Dash Board Service
+
+
+**********************************************************
+Project creation:  create foleder locally then open it in vs code
+		   create package .json file [command: npm -i init]  -> file will created
+	           install cypress [command: npm install cypress --save-dev]
+
+  
+   in node_modules : all jar file and dependacies will store here 
+   
+  Now open cypress ui : goto node_mode->.bin->copy path of .bin folder and paste into terminal and infront of it add command [open]
+  it will open ui -> select browser (automatically all configuration file will created you can check in vs code in project like config.js file)
+
+************************************************************
+Writing and run Test files:
+
+Note:in js terminology we say test file as spec 
+
+ 1. To write test files : go to cypres folder-> create one folder named(integration) -> in that create subfolder -> in that create test file with extension of .js 
+  
+  2.   In file create testsuit and write test in it 
+		Ex.describe( 'my first test suite', function(){
+                     it('my first test case', function(){
+                     cy.visit("https://rahulshettyacademy.com/");
+ 			})
+			})
+  3.write configuration for this file to run :in config file give path for testfile (Ex .  specPattern: "path of file";)
+	then it will automaticlaly loded in testrunner , to run that file just click on it in testrunner it will run 
+
+test will run succesffuly
+************************************************************	
+
+Folder structure /framework understand:
+
+  cypress(folder have following sub solder):
+	fixture(automatically created folder)-> store test data  
+	integratoin(manually created)->     all test files
+	plugins(automatically created->use for handling events Like listeners
+	support(automatically created)->  reusable code and methods store in  this which are common for all test
+	
+ node_modules (automaticlly created ) -> this is heart of cypress
+
+ cypress.config.js (file automatically created file)-> contain configuration (like test file path configuration)
+
+***********************************************************************
+Demosite:
+     https://rahulshettyacademy.com/seleniumPractise/#/
+
+***********************************************************
