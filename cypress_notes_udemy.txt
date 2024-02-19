@@ -84,6 +84,8 @@ Folder structure /framework understand:
 
  cypress.config.js (file automatically created file)-> contain configuration (like test file path configuration)
 
+
+  command to open cypress testruynner :[npx cypress open]
 ***********************************************************************
 Demosite:
      https://rahulshettyacademy.com/seleniumPractise/#/
