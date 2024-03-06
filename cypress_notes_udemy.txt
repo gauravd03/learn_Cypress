@@ -50,7 +50,7 @@ Project creation:  create foleder locally then open it in vs code
   
    in node_modules : all jar file and dependacies will store here 
    
-  Now open cypress ui : goto node_mode->.bin->copy path of .bin folder and paste into terminal and infront of it add command [open]
+  Now open cypress ui : goto node_mode->.bin->copy path of .bin folder and paste into terminal and infront of it add command [open]  // or directly enter command[npx cypress open]
   it will open ui -> select browser (automatically all configuration file will created you can check in vs code in project like config.js file)
 
 ************************************************************
